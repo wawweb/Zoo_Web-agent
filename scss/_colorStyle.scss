@@ -1,0 +1,269 @@
+//BG
+$mainBG_1: #000000;
+$mainBG_2: #ffffff;
+$mainBG_3: #998675;
+@mixin bgStyle_1 {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+$subBG_1: #F44336;
+$subBG_2: #008040;
+$subBG_3: #006837;
+$subBG_4: #736357;
+
+//color
+$mainColor_1: #ffffff;
+$mainColor_2: #000000;
+$mainColor_3: #998675;
+
+$subColor_1: #FFFF00;
+$subColor_2: #C7B299;
+$subColor_3: #FFE552;
+$subColor_4: #39A2F7;
+$subColor_5: #ff0000;
+$subColor_6: #F7931E;
+$subColor_7: #736357;
+$subColor_8: #74A333;
+$subColor_9: #C1272D;
+$subColor_10: #0071BC;
+$subColor_11: #FBB03B;
+$subColor_12: #52DC57;
+$subColor_13: #534741;
+$subColor_14: #808080;
+$subColor_15: #0000FF;
+
+//border
+$mainBorder_1: #ffffff;
+$mainBorder_2: #998675;
+
+$subBorder_1: #534741;
+$subBorder_2: #5347414f;
+
+//shadow
+$textShadow_1: #000000c0;
+$textShadow_2: #00000066;
+
+//filter
+$filter: #000000c4;
+
+//leftSide
+@mixin leftSideBG {
+    background: transparent;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        border: solid 2px #6E726A;
+        border-radius: 10px;
+        box-shadow: 0 0 0 2px #000000 inset;
+        z-index: -1;
+    }
+}
+@mixin leftSideWalletBtn {
+    border: solid 2px #998675;
+    border-radius: 10px;
+    position: relative;
+    padding: 5px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background: #998675;
+        opacity: 0.1;
+        z-index: -1;
+    }
+
+    &:hover,&:active,&.active {
+        border-color: #ffffff;
+
+        &::before {
+            background: #ffffff;
+            opacity: 0.4;
+        }
+    }
+}
+@mixin leftSideList {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        opacity: 0.1;
+        z-index: -2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        border: solid 2px #ffffff;
+        box-shadow: 0 0 0 2px #000000 inset;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    &:hover,&:active,&.active {
+
+        &::before {
+            background: #FBB03B;
+            opacity: 0.7;
+        }
+
+        &::after {
+            box-shadow: none;
+            opacity: 1;
+        }
+    }
+}
+@mixin leftInput {
+    background: #ffffff;
+    border-radius: 3px;
+    border: solid 1px #666666;
+    color: #000000;
+    font-size: 14px;
+    padding-left: 10px;
+
+    &::placeholder {
+        color: #000000;
+    }
+}
+
+//member
+$member_sercurity_highColor: #52DC57;
+//vip
+$row_linearBG: linear-gradient(to top,#FF0000 0%,#F15A24 100%);
+
+//button
+@mixin btnStyle_1 {
+    background: linear-gradient(to top,#F7931E 0%,#FFFF00 100%);
+    border-radius: 50px;
+    border: solid 2px #ffffff;
+    box-shadow: 0 0 0 2px #00000080 inset;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+@mixin btnStyle_2 {
+    background: transparent;
+    border-radius: 16px;
+    border: solid 2px #998675;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background: #998675;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#FFFF00 0%,#F7931E 100%);
+        border-color: #ffffff;
+        text-shadow: 2px 2px 0 #00000066;
+
+        &::before {
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            background: transparent;
+            border: solid 2px #000000;
+            border-radius: 16px;
+            opacity: 0.5;
+            z-index: 1;
+        }
+    }
+}
+@mixin btnStyle_3 {
+    background: linear-gradient(to bottom,#FF8C00 0%,#F7401E 100%);
+    border-radius: 50px;
+    border: solid 2px #ffffff;
+    box-shadow: 0 0 0 2px #00000080 inset;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+//共用
+@mixin arrowStyle_1 {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    border-color: #ffffff #ffffff transparent transparent;
+}
+@mixin scrollStyle_1 {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+@mixin scrollStyle_2 {
+    overflow-y: auto;
+
+   &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+        
+    &::-webkit-scrollbar-thumb {
+        background: #cccccc;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px;
+    }
+}
+@mixin textHide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

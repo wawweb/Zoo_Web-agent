@@ -1,0 +1,91 @@
+//bg
+.bg {
+    background: url('../images/background.png') no-repeat center;
+    background-size: cover;
+}
+
+//header
+header .lang_ic {
+    background: url('../images/lang_ic.png') no-repeat center;
+    background-size: contain;
+}
+
+//agentPage
+.agentHeader .right .selectBox label button,
+.agentPage .middle .ourCommission button {
+    background: url('../images/btn/btnBG_3.png') no-repeat center;
+    background-size: 100%;
+}
+.mainPage.agentPage .banner {
+    background: url("../images/agentPage_banner.png") no-repeat center;
+    background-size: cover;
+}
+.mainPage .middle .topBG {
+    background: url("../images/innerPage_greenBG.png") no-repeat;
+}
+.mainPage.agentPage .middle .topBG .pageLine.whyUS {
+    background: url('../images/pageLine/pageLine_whyUS.png') no-repeat center;
+    background-size: contain;
+}
+.mainPage.agentPage .middle .topBG .pageLine.commission {
+    background: url('../images/pageLine/pageLine_commission.png') no-repeat center;
+    background-size: contain;
+}
+.mainPage.agentPage .middle .topBG .pageLine.faq {
+    background: url('../images/pageLine/pageLine_faq.png') no-repeat center;
+    background-size: contain;
+}
+.mainPage.agentPage .middle .topBG .pageLine.terms {
+    background: url('../images/pageLine/pageLine_termsofUser.png') no-repeat center;
+    background-size: contain;
+}
+.mainPage.agentPage .middle .pageLine.privacy {
+    background: url('../images/pageLine/pageLine_agentpolicy.png') no-repeat center;
+    background-size: contain;
+}
+.mainPage.agentPage .sideNav li {
+    background: url('../images/agent_navBtn.png') no-repeat;
+    background-size: 100%;
+}
+
+//jumpWindow
+.filter .close_ic {
+    background: url('../images/jumpWIndow_close.png') no-repeat center;
+    background-size: contain;
+}
+.filter .topBG {
+    background: url('../images/innerPage_greenBG.png') no-repeat;
+}
+.filter .news .bg_wood {
+    background: url('../images/bg_wood_smallest.png') no-repeat center;
+    background-size: contain;
+}
+.filter .agentApplyWindow {
+    background: url('../images/jumpWindow_agentApply.png') no-repeat;
+    background-size: 100%;
+}
+.filter .agentApplyWindow  form label ul li input::before {
+    background: url('../images/checkBox_BG2.png') no-repeat;
+    background-size: 100%;
+}
+.filter .agentApplyWindow  form label ul li input::after {
+    background: url('../images/checkBox_check.png') no-repeat;
+    background-size: 100%;
+}
+.filter .agentApplyWindow  .check input::before {
+    background: url('../images/checkBox_BG.png') no-repeat;
+    background-size: 100%;
+}
+.filter .agentApplyWindow  .check input::after {
+    background: url('../images/checkBox_check.png') no-repeat;
+    background-size: 100%;
+}
+.filter .agentApplyWindow  button.enter {
+    background: url('../images/btn/btnBG_2.png') no-repeat;
+    background-size: 100%;
+}
+.filter .agentApplyWindow  button.enter:active,
+.filter .agentApplyWindow  button.enter.active {
+    background: url('../images/btn/btnBG_1.png') no-repeat;
+    background-size: 100%;
+}
